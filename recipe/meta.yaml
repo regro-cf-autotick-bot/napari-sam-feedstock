@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-sam-{{ version }}.tar.gz
   sha256: 6ad254730d92b434bf4b352e4475893a7553311f4a6b815abdca761c64aab493
+  patches:
+    - qtpy.patch
 
 build:
   noarch: python
