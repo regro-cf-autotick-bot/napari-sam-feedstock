@@ -24,11 +24,13 @@ requirements:
     - numpy
     - magicgui
     - python >=3.8
+    - pytorch >=1.7
     - qtpy
     - segment-anything
     - superqt
+    - torchvision >=0.8
     - tqdm
-    - vispy    
+    - vispy
 
 test:
   imports:
