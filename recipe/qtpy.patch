@@ -1,0 +1,10 @@
+diff --git a/src/napari_sam/QCollapsibleBox.py b/src/napari_sam/QCollapsibleBox.py
+index 77c07e5..35f6595 100644
+--- a/src/napari_sam/QCollapsibleBox.py
++++ b/src/napari_sam/QCollapsibleBox.py
+@@ -1,4 +1,4 @@
+-from PyQt5 import QtCore, QtWidgets
++from qtpy import QtCore, QtWidgets
+ 
+ 
+ class QCollapsibleBox(QtWidgets.QWidget):
