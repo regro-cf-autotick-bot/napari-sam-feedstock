@@ -43,10 +43,11 @@ test:
     - pyqt
 
 about:
-  home: https://github.com/MIC-DKFZ/napari-sam
+  home: https://pypi.org/project/napari-sam
   summary: Segment anything with Meta AI's new SAM model!
   license: Apache-2.0
   license_file: LICENSE
+  dev_url: https://github.com/MIC-DKFZ/napari-sam
 
 extra:
   recipe-maintainers:
