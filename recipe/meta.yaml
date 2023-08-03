@@ -20,7 +20,7 @@ requirements:
     - python >=3.8
   run:
     - napari
-    # - napari-nifti  # Not used in source code
+    - napari-nifti  # Not used in source code
     - numpy
     # - magicgui  # Not used in source code
     - python >=3.8
