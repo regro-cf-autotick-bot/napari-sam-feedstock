@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-sam-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari-sam-{{ version }}.tar.gz
   sha256: f1f6fe177e45a217a3fd10e3a66c2f641560b9b14e940cd00d2fbebc9f65ce5f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - napari
     - napari-nifti  # Not used in source code
     - numpy
     # - magicgui  # Not used in source code
-    - python >=3.8
+    - python >={{ python_min }}
     - pytorch >=1.7
     - qtpy
     - segment-anything
@@ -41,6 +41,7 @@ test:
   requires:
     - pip
     - pyqt
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/napari-sam
